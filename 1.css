@@ -1,0 +1,193 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #faf8f8 !important;
+}
+
+body .container {
+  max-width: 1100px;
+  margin: 30px;
+}
+
+#filter-buttons button {
+  border-radius: 15px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #00060a;
+}
+
+#filterable-cards .card {
+  border-radius: 17px 17px 17px 17px;
+  width: 300px;
+  height: 390px;
+  border: 2px solid transparent;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+/*свой стиль карточек */
+
+.card img {
+  border-radius: 15px 15px 0px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+/*  стили поисковой строки */
+.box {
+  position: fixed;
+  top: -18px;
+  left: 20px;
+  right: 20px;
+  width: 90%;
+  z-index: 999;
+}
+@media screen and (max-width: 450px) {
+   .box{
+    height:54px;
+    position: fixed;
+    top: 12px;
+    z-index: 999;
+    width: 80%;
+    margin: 10% 10%;
+  }
+  .add-to-cart-btn {
+    background-color: blue;
+    color: rgb(10, 0, 0);
+  }
+}
+/**/
+ .search-box {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 22px;
+  padding: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.search-box input[type='text'] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.search-box label.icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  cursor: pointer;
+}
+
+.search-box label.icon:hover {
+  color: #f8f4f4;
+}
+ /**/
+.search-box .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  background-color: #fff;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.search-box:hover input[type="text"] {
+  width: 100%;
+}
+
+.search-box:hover .icon {
+  background-color: #333;
+  color: #fff;
+}
+/**/
+
+@media (min-width: 768px) {
+  .card img {
+    max-width: 295px;
+  }
+  .card img {
+    border-radius: 15px 15px 0px 0;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+/**/
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(39, 38, 38);
+  margin-bottom: 10px;
+}
+.discount {
+  color: rgb(94, 85, 85); /* изменяем цвет текста на красный */
+  font-size: 19px; /* изменяем размер шрифта */
+  text-decoration: line-through; /* добавляем зачеркивание текста */
+  margin-top: 2px; /* добавляем отступ сверху */
+}
+/**/
+
+
+
+
+
